@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.eddy102.firstdemo.ChangeBackground">
+
+    <View
+        android:id="@+id/viewPic"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <TableLayout
+        android:id="@+id/tableLayoutPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnSavePic">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shutterstock_130125752_huge"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shutterstock_248651677_supersize"
+                android:contentDescription="@string/todo"/>
+
+            <ImageView
+                android:id="@+id/pic3"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shutterstock_280897220_huge"
+                android:contentDescription="@string/todo"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <ImageView
+                android:id="@+id/pic4"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shutterstock_316465280_huge"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/pic5"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shutterstock_333376544_huge"
+                android:contentDescription="@string/todo"/>
+
+            <ImageView
+                android:id="@+id/pic6"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shutterstock_390660301_huge"
+                android:contentDescription="@string/todo"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSavePic"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
