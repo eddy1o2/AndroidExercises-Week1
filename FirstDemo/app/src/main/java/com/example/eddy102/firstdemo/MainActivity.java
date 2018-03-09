@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (requestCode == 1020 && resultCode == RESULT_OK){
-            Picasso.with(this).load(data.getExtras().getInt("loadPic")).into(imageView);
+            if (data.getExtras().getInt("loadPic") != 0)
+                Picasso.with(this).load(data.getExtras().getInt("loadPic")).into(imageView);
         }
     }
 }
